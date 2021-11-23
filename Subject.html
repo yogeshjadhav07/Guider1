@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="user.css">
+<title>Insert title here</title>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="user.html">Home</a></li>
+  <li><a href="Subject.html">Subject</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+
+<div class="container">
+<center><a href="java.html">Java</a></center>
+</div>
+<div>
+<center><a href="java.html">JSP</a></center>
+</div>
+
+
+</body>
+<style>
+body {
+  margin: 0;
+}
+
+div{
+	display:block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+a{
+	display:block;	
+	font:30px;
+}
+.container{
+	color:red;
+}
+</style>
+
+</html>

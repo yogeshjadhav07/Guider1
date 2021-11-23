@@ -1,0 +1,131 @@
+.dropbtn {
+	
+  background-color: black;
+  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+  
+  color: white;
+  padding: 14px;
+  font-size: 13px;
+  border: none;
+  border-radius: 10px;
+	
+	box-sizing: border-box;
+}
+.dropbtn:hover{
+  background: -webkit-linear-gradient(left, red, #7579ff);
+  
+}
+.dropdown {
+	
+	
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+	
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover { background: -webkit-linear-gradient(left, #BFF098, #6FD6FF);
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   #nav {
+            list-style: none inside;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #nav li {
+            display: block;
+            position: relative;
+           
+            background: -webkit-linear-gradient(left, yellow, green);
+            /* menu background color */
+        }
+
+        #nav li a {
+            display: block;
+            padding: 0;
+            text-decoration: none;
+            width: 200px;
+            /* this is the width of the menu items */
+            line-height: 45px;
+            /* this is the hieght of the menu items */
+           
+            /* list item font color */
+        }
+
+        #nav li li a {
+            font-size: 80%;
+        }
+
+        /* smaller font size for sub menu items */
+
+        #nav li:hover {
+            background: skyblue;
+        }
+
+        /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+        #nav ul {
+            position: absolute;
+           padding-left: 200px;
+              
+			   
+            display: none;
+            /* hides sublists */
+        }
+
+        #nav li:hover ul ul {
+            display: none;
+        }
+
+        /* hides sub-sublists */
+
+        #nav li:hover ul {
+            display: block;
+        }
+
+        /* shows sublist on hover */
+
+        #nav li li:hover ul {
+            display: block;
+            /* shows sub-sublist on hover */
+            margin-left: 200px;
+            /* this should be the same width as the parent list item */
+            margin-top: -35px;
+            /* aligns top of sub menu with top of list item */
+        }
